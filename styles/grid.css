@@ -1,0 +1,58 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.container {
+  
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(110px 1fr) minmax(500px, 1fr) 1fr; 
+   
+    grid-template-areas: 
+      "header"
+      "section"
+      "aside"
+      "book-a-table"
+      "footer";
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  section {
+      grid-area: section;
+  }
+
+  aside {
+    grid-area: aside;  
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+
+  .book-a-table-container {
+      grid-area: book-a-table;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

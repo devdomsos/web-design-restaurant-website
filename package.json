@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server"
+    "start": "live-server"
   },
   "author": "",
   "license": "ISC",
