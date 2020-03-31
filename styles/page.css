@@ -19,11 +19,36 @@
     padding: 0;
 }
 
+body {
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+img {
+  transition: all .5s;
+}
+
 
 .container-80 {
    margin: auto;
    width: 90%;
   
+}
+
+.element-top-80 {
+  margin-top: 80px;
+}
+
+.element-top-0 {
+  margin-top: 0;
+}
+
+.elemnt-bottom-0{
+  margin-bottom: 0;
+}
+.element-bottom-20 {
+  margin: 0 0 20px;
 }
 
 .header-container  {
@@ -110,18 +135,6 @@
     font-weight: 300;
 }
 
-.element-top-0 {
-  margin-top: 0;
-}
-
-.elemnt-bottom-0{
-  margin-bottom: 0;
-}
-.element-bottom-20 {
-  margin: 0 0 20px;
-}
-
-
 .showcase-btn {
     margin: 20px 10px;
     padding: 10px 24px;
@@ -142,6 +155,59 @@
 .btn-book-a-table {
   box-shadow: 0px 0px 0px 1px #fff inset
 }
+
+/* About Cook Section */
+ /* Layout Containers */
+.background-media-right-food {
+  background-image: url(/images/about-background.jpeg);
+  background-size: auto;
+}
+
+.col-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+} 
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  /* vertical-align: middle; */
+  align-content: center;
+
+}
+
+.col-md {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.col-sm {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+ /* Elements of the containers */
+  .col-sm h1 {
+    color: #c90;
+    font-family: Yeseva One, sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 36px;
+    line-height: 1.5em;
+  }
+
+  .col-sm p {
+    color: #51575b;
+    margin: 0 0 11.5px;
+    line-height: 1.7em;
+
+  }
+
+  .hero_container img {
+    margin-left: 50px;
+  }
 
 aside {
   background-color: #6ad78a; 
