@@ -111,9 +111,10 @@ img {
 .section-container-flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   align-content: flex-end;
+  height: 100vh;
 }
 
 .background-media {
@@ -207,6 +208,24 @@ img {
 
   .hero_container img {
     margin-left: 50px;
+  }
+
+  /* Fine-dining Section  */
+  /* Layout Containers */
+
+  .background-media-right-dining {
+    background-image: url(/images/reviews-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-color: rgba(0, 0, 0, 0);
+    height: 500px;
+    display: flex;
+  }
+
+  .panel-body {
+    background-color: rgba(0, 0, 0, 0.69);
   }
 
 aside {
