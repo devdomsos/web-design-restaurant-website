@@ -44,6 +44,10 @@ img {
   margin-top: 0;
 }
 
+.element-top-20 {
+  margin-top: 20px;
+}
+
 .elemnt-bottom-0{
   margin-bottom: 0;
 }
@@ -124,9 +128,14 @@ img {
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 0;
-  transition: background-image 3s ease;
+  transition: background-position .3s ease-out;
 
 }
+
+.background-media:hover {
+  background-position: 50% -5px;
+}
+
 
 .showcase-section h1 {
     font-size: 92px;
@@ -160,8 +169,10 @@ img {
 /* About Cook Section */
  /* Layout Containers */
 .background-media-right-food {
-  background-image: url(/images/about-background.jpeg);
+  background-image: url(/images/about-background.jpeg) no-repeat center center/cover;
   background-size: auto;
+  position: relative;
+
 }
 
 .col-container {
@@ -174,6 +185,7 @@ img {
   height: auto;
   /* vertical-align: middle; */
   align-content: center;
+  width: 800px;
 
 }
 
@@ -218,14 +230,44 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 50% 0;
+    background-position: 50% 40%;
     background-color: rgba(0, 0, 0, 0);
-    height: 500px;
+    height: 700px;
     display: flex;
+    transition: background-position .3s ease-in-out;
+    position: relative;
   }
-
   .panel-body {
     background-color: rgba(0, 0, 0, 0.69);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -50%;
+    align-items: center;
+    text-align: center;
+    width: 555px;
+    height: 414px;
+    padding: 15px;
+  }
+
+  .panel-body h1 {
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 36px;
+      font-family:'Yeseva One', sans-serif;
+      font-weight: lighter;
+  }
+
+  .panel-body p {
+    color: white;
+    margin-bottom: 16.5px;
+    font-weight: 400;
+    line-height: 1.7142857143;
+  }
+
+  .panel-body img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
   }
 
 aside {
